@@ -1,0 +1,12 @@
+# Google Services (ex. APIs and Firebase)
+google-services.json
+GoogleService-Info.plist
+
+# Firebase Hosting
+hosting.cHVibGlj.cache
+firebase.json
+package-lock.json
+package.json
+.firebaserc
+firebase-debug.log
+
