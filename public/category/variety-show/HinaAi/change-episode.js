@@ -807,7 +807,7 @@ function LinkGD154() { document.getElementById("HinaAi154").src = "https://drive
 function LinkOK154() { document.getElementById("HinaAi154").src = "//ok.ru/videoembed/3873057278486"; }
 
 //link ep155
-function LinkDL155() { document.getElementById("HinaAi155").src = "https://www.dailymotion.com/embed/video/k4J8gXoPX2iF7vy5YEo"; }
+function LinkDL155() { document.getElementById("HinaAi155").src = "https://www.dailymotion.com/embed/video/k43Nd0v29fkz0wy6h8a"; }
 function LinkGD155() { document.getElementById("HinaAi155").src = "https://drive.google.com/file/d/15LlKwfnUnQ-BKyvI38dyTnaIzPp85o7H/preview"; }
 function LinkOK155() { document.getElementById("HinaAi155").src = "//ok.ru/videoembed/3873643039254"; }
 

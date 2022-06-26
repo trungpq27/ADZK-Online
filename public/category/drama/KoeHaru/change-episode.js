@@ -44,7 +44,7 @@ function LinkGD09() { document.getElementById("KoeHaru09").src = "https://drive.
 function LinkOK09() { document.getElementById("KoeHaru09").src = "//ok.ru/videoembed/3594359933462"; }
 
 //link ep10
-function LinkDL10() { document.getElementById("KoeHaru10").src = "https://www.dailymotion.com/embed/video/x89h2wd"; }
+function LinkDL10() { document.getElementById("KoeHaru10").src = "https://www.dailymotion.com/embed/video/kkQpVZbfI5dH8yy6h8b"; }
 function LinkGD10() { document.getElementById("KoeHaru10").src = "https://drive.google.com/file/d/1lHjd8U7xFrvx2t1ebGOtzPydPNvUVDnM/preview"; }
 function LinkOK10() { document.getElementById("KoeHaru10").src = "//ok.ru/videoembed/3595752638998"; }
 
