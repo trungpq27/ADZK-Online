@@ -811,6 +811,17 @@ function LinkDL155() { document.getElementById("HinaAi155").src = "https://www.d
 function LinkGD155() { document.getElementById("HinaAi155").src = "https://drive.google.com/file/d/15LlKwfnUnQ-BKyvI38dyTnaIzPp85o7H/preview"; }
 function LinkOK155() { document.getElementById("HinaAi155").src = "//ok.ru/videoembed/3873643039254"; }
 
+//link ep156
+function LinkDL156() { document.getElementById("HinaAi156").src = "https://www.dailymotion.com/embed/video/k3NNiADx2C00Xdy6L9C"; }
+function LinkGD156() { document.getElementById("HinaAi156").src = "https://drive.google.com/file/d/1hwklJd09zRnB8hGVm7KE-JTusG27bIEc/preview"; }
+function LinkOK156() { document.getElementById("HinaAi156").src = "//ok.ru/videoembed/3884920474134"; }
+
+//link ep157
+function LinkDL157() { document.getElementById("HinaAi157").src = "https://www.dailymotion.com/embed/video/kyPmTiQDqyybgey74KA"; }
+function LinkGD157() { document.getElementById("HinaAi157").src = "https://drive.google.com/file/d/1mAfMEgwXOMllX5MnERbjlKOJvhThVa1d/preview"; }
+function LinkOK157() { document.getElementById("HinaAi157").src = "//ok.ru/videoembed/3889473784342"; }
+
+
 
 
 
