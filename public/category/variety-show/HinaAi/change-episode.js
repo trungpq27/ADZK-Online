@@ -71,19 +71,19 @@ function LinkGD10() { document.getElementById("HinaAi10").src = "https://drive.g
 function LinkOK10() { document.getElementById("HinaAi10").src = "//ok.ru/videoembed/2485000800790"; }
 
 //link ep11
-function LinkDL11() { document.getElementById("HinaAi11").src = "https://www.dailymotion.com/embed/video/k57VoZXf112Gbqx6DIc"; }
-function LinkGD11() { document.getElementById("HinaAi11").src = "https://drive.google.com/file/d/1gFDVhpZ-wuzAYQDyldXc8TA9ln9ZptVH/preview"; }
-function LinkOK11() { document.getElementById("HinaAi11").src = "//ok.ru/videoembed/2485000931862"; }
+function LinkDL11() { document.getElementById("HinaAi11").src = "https://www.dailymotion.com/embed/video/k3IUVKhOc2r0Njy7t58"; }
+function LinkGD11() { document.getElementById("HinaAi11").src = "https://drive.google.com/file/d/1mWYAgrVbnlx7ORVnGhcobfQ_WUoeGtcu/preview"; }
+function LinkOK11() { document.getElementById("HinaAi11").src = "//ok.ru/videoembed/3895136684566"; }
 
 //link ep12
-function LinkDL12() { document.getElementById("HinaAi12").src = "https://www.dailymotion.com/embed/video/k33bhnTZN79iV1x6DId"; }
-function LinkGD12() { document.getElementById("HinaAi12").src = "https://drive.google.com/file/d/1Abksb8snacKiF7sh2v8LcZpD__w_g02c/preview"; }
-function LinkOK12() { document.getElementById("HinaAi12").src = "//ok.ru/videoembed/2485001062934"; }
+function LinkDL12() { document.getElementById("HinaAi12").src = "https://www.dailymotion.com/embed/video/k5wlnw6bhNFaaSy7t59"; }
+function LinkGD12() { document.getElementById("HinaAi12").src = "https://drive.google.com/file/d/1t_2fhpnfXNuspFpxT9S5Ztaq2wcWUv8U/preview"; }
+function LinkOK12() { document.getElementById("HinaAi12").src = "//ok.ru/videoembed/3895136750102"; }
 
 //link ep13
-function LinkDL13() { document.getElementById("HinaAi13").src = "https://www.dailymotion.com/embed/video/k7nimUhZrMlUyWx6DIe"; }
-function LinkGD13() { document.getElementById("HinaAi13").src = "https://drive.google.com/file/d/1PG24nwt_pZBaD5dqvSHnhaKZFSHRkIFV/preview"; }
-function LinkOK13() { document.getElementById("HinaAi13").src = "//ok.ru/videoembed/2485001128470"; }
+function LinkDL13() { document.getElementById("HinaAi13").src = "https://www.dailymotion.com/embed/video/kj31BToibjON1Cy7t5a"; }
+function LinkGD13() { document.getElementById("HinaAi13").src = "https://drive.google.com/file/d/1H3-PzxzzOUqXhoGqeYLVP2T6PKewMKzl/preview"; }
+function LinkOK13() { document.getElementById("HinaAi13").src = "//ok.ru/videoembed/3895136815638"; }
 
 //link ep14
 function LinkDL14() { document.getElementById("HinaAi14").src = "https://www.dailymotion.com/embed/video/x83gvxr"; }
