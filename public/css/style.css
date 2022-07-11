@@ -1375,6 +1375,11 @@ hr.invis {
   background-color: #447d8f;
   color: #ffffff;
 }
+
+.numEp-bold {
+  border: 2px solid #ffffff;
+}
+
 .numEp:hover:before,
 .Change-Server:hover:before {
   -webkit-transform: translateY(0%);

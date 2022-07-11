@@ -1,350 +1,354 @@
-<script src="change-episode.js"></script>
-
-<meta http-equiv="cache-control" content="no-cache, must-revalidate, post-check=0, pre-check=0" />
-<meta http-equiv="cache-control" content="max-age=0" />
-<meta http-equiv="expires" content="0" />
-<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
-<meta http-equiv="pragma" content="no-cache" />
-
+<script src = "js/links.js"></script>
+<script src = "js/main.js"></script>
 
 <h3 class="EpisodeTitle" style="display: block; float: left; padding-right: 5px;">Episode:</h3>
-<a class="epLink"><button class="numEp" onclick="bef100()"><<</button><p>100 tập trước</p></a>
+<a class="epLink"><button class="numEp" onclick="bef50()"><<</button><p>50 tập trước</p></a>
 
-<a class="epLink"><button class="numEp" onclick="nex100()">>></button><p>100 tập sau</p></a>
+<a class="epLink"><button class="numEp" onclick="nex50()">>></button><p>50 tập sau</p></a>
 
 <div class="Ep-List">
 
-    <div id="001-100" style="display: none; transition: all 0.3 ease;">
-        <a class="epLink" href="HinaAi01.html"><button class="numEp">001</button><p>Niên biểu Hinatazaka! Phần 1</p></a>
-
-        <a class="epLink" href="HinaAi02.html"><button class="numEp">002</button><p>Niên biểu Hinatazaka! Phần 2</p></a>
-
-        <a class="epLink" href="HinaAi03.html"><button class="numEp">003</button><p>Học tập ở KasuKasu Radio! Phần 1</p></a>
-
-        <a class="epLink" href="HinaAi04.html"><button class="numEp">004</button><p>Học tập ở KasuKasu Radio! Phần 2</p></a>
-
-        <a class="epLink" href="HinaAi05.html"><button class="numEp">005</button><p>Giải đấu DekoBen!</p></a>
-
-        <a class="epLink" href="HinaAi06.html"><button class="numEp">006</button><p>Cuộc chiến để được Kasuga đãi! Phần 1</p></a>
-
-        <a class="epLink" href="HinaAi07.html"><button class="numEp">007</button><p>Cuộc chiến để được Kasuga đãi! Phần 2</p></a>
-
-        <a class="epLink" href="HinaAi08.html"><button class="numEp">008</button><p>Tương lai tưởng tượng của Hinatazaka! Lần 2</p></a>
-
-        <a class="epLink" href="HinaAi09.html"><button class="numEp">009</button><p>Tìm hiểu những mặt mới của các thành viên! Phần 1</p></a>
-
-        <a class="epLink" href="HinaAi10.html"><button class="numEp">010</button><p>Tìm hiểu những mặt mới của các thành viên! Phần 2</p></a>
-
-        <a class="epLink" href="HinaAi11.html"><button class="numEp">011</button><p>BBQ Bus Tour! Phần 1</p></a>
-
-        <a class="epLink" href="HinaAi12.html"><button class="numEp">012</button><p>BBQ Bus Tour! Phần 2</p></a>
-
-        <a class="epLink" href="HinaAi13.html"><button class="numEp">013</button><p>BBQ Bus Tour! Phần 3</p></a>
-
-        <a class="epLink" href="HinaAi14.html"><button class="numEp">014</button><p>Chiến dịch cầu nguyện single 2! Phần 1</p></a>
+    <div id="1-50" style="display: none; transition: all 0.3 ease;">
+        <a class="epLink" ><button id="ButtonEp01" class="numEp" onclick="changeEpisodeNumber('01')">001</button><p>Niên biểu Hinatazaka! Phần 1</p></a>
     
-        <a class="epLink" href="HinaAi15.html"><button class="numEp">015</button><p>Chiến dịch cầu nguyện single 2! Phần 2</p></a>
-        
-        <a class="epLink" href="HinaAi16.html"><button class="numEp">016</button><p>Biểu đồ quan hệ của Hinatazaka46!</p></a>
+        <a class="epLink" ><button id="ButtonEp02" class="numEp" onclick="changeEpisodeNumber('02')">002</button><p>Niên biểu Hinatazaka! Phần 2</p></a>
 
-        <a class="epLink" href="HinaAi17.html"><button class="numEp">017</button><p>The NIBUMONEA! Phần 1</p></a>
+        <a class="epLink" ><button id="ButtonEp03" class="numEp" onclick="changeEpisodeNumber('03')">003</button><p>Học tập ở KasuKasu Radio! Phần 1</p></a>
 
-        <a class="epLink" href="HinaAi18.html"><button class="numEp">018</button><p>The NIBUMONEA! Phần 2</p></a>
+        <a class="epLink" ><button id="ButtonEp04" class="numEp" onclick="changeEpisodeNumber('04')">004</button><p>Học tập ở KasuKasu Radio! Phần 2</p></a>
 
-        <a class="epLink" href="HinaAi19.html"><button class="numEp">019</button><p>clb bóng chày Hinatazaka! Phần 1!</p></a>
+        <a class="epLink" ><button id="ButtonEp05" class="numEp" onclick="changeEpisodeNumber('05')">005</button><p>Giải đấu DekoBen!</p></a>
 
-        <a class="epLink" href="HinaAi20.html"><button class="numEp">020</button><p>clb bóng chày Hinatazaka! Phần 2</p></a>
+        <a class="epLink" ><button id="ButtonEp06" class="numEp" onclick="changeEpisodeNumber('06')">006</button><p>Cuộc chiến để được Kasuga đãi! Phần 1</p></a>
 
-        <a class="epLink" href="HinaAi21.html"><button class="numEp">021</button><p>Tìm kiếm nữ hoàng ứng biến! Phần 1</p></a>
+        <a class="epLink" ><button id="ButtonEp07" class="numEp" onclick="changeEpisodeNumber('07')">007</button><p>Cuộc chiến để được Kasuga đãi! Phần 2</p></a>
 
-        <a class="epLink" href="HinaAi22.html"><button class="numEp">022</button><p>Tìm kiếm nữ hoàng ứng biến! Phần 2</p></a>
+        <a class="epLink" ><button id="ButtonEp08" class="numEp" onclick="changeEpisodeNumber('08')">008</button><p>Tương lai tưởng tượng của Hinatazaka! Lần 2</p></a>
 
-        <a class="epLink" href="HinaAi23.html"><button class="numEp">023</button><p>Sinh nhật cho Wakabayashi-san!</p></a>
+        <a class="epLink" ><button id="ButtonEp09" class="numEp" onclick="changeEpisodeNumber('09')">009</button><p>Tìm hiểu những mặt mới của các thành viên! Phần 1</p></a>
 
-        <a class="epLink" href="HinaAi24.html"><button class="numEp">024</button><p>Chiến dịch cầu nguyện single 3! Phần 1</p></a>
+        <a class="epLink" ><button id="ButtonEp10" class="numEp" onclick="changeEpisodeNumber('10')">010</button><p>Tìm hiểu những mặt mới của các thành viên! Phần 2</p></a>
+
+        <a class="epLink" ><button id="ButtonEp11" class="numEp" onclick="changeEpisodeNumber('11')">011</button><p>BBQ Bus Tour! Phần 1</p></a>
+
+        <a class="epLink" ><button id="ButtonEp12" class="numEp" onclick="changeEpisodeNumber('12')">012</button><p>BBQ Bus Tour! Phần 2</p></a>
+
+        <a class="epLink" ><button id="ButtonEp13" class="numEp" onclick="changeEpisodeNumber('13')">013</button><p>BBQ Bus Tour! Phần 3</p></a>
+
+        <a class="epLink" ><button id="ButtonEp14" class="numEp" onclick="changeEpisodeNumber('14')">014</button><p>Chiến dịch cầu nguyện single 2! Phần 1</p></a>
     
-        <a class="epLink" href="HinaAi25.html"><button class="numEp">025</button><p>Chiến dịch cầu nguyện single 3! Phần 2</p></a>
+        <a class="epLink" ><button id="ButtonEp15" class="numEp" onclick="changeEpisodeNumber('15')">015</button><p>Chiến dịch cầu nguyện single 2! Phần 2</p></a>
         
-        <a class="epLink" href="HinaAi26.html"><button class="numEp">026</button><p>Giải vô địch Minami-chan! Phần 1</p></a>
+        <a class="epLink" ><button id="ButtonEp16" class="numEp" onclick="changeEpisodeNumber('16')">016</button><p>Biểu đồ quan hệ của Hinatazaka46!</p></a>
 
-        <a class="epLink" href="HinaAi27.html"><button class="numEp">027</button><p>Giải vô địch Minami-chan! Phần 2</p></a>
+        <a class="epLink" ><button id="ButtonEp17" class="numEp" onclick="changeEpisodeNumber('17')">017</button><p>The NIBUMONEA! Phần 1</p></a>
+
+        <a class="epLink" ><button id="ButtonEp18" class="numEp" onclick="changeEpisodeNumber('18')">018</button><p>The NIBUMONEA! Phần 2</p></a>
+
+        <a class="epLink" ><button id="ButtonEp19" class="numEp" onclick="changeEpisodeNumber('19')">019</button><p>clb bóng chày Hinatazaka! Phần 1!</p></a>
+
+        <a class="epLink" ><button id="ButtonEp20" class="numEp" onclick="changeEpisodeNumber('20')">020</button><p>clb bóng chày Hinatazaka! Phần 2</p></a>
+
+        <a class="epLink" ><button id="ButtonEp21" class="numEp" onclick="changeEpisodeNumber('21')">021</button><p>Tìm kiếm nữ hoàng ứng biến! Phần 1</p></a>
+
+        <a class="epLink" ><button id="ButtonEp22" class="numEp" onclick="changeEpisodeNumber('22')">022</button><p>Tìm kiếm nữ hoàng ứng biến! Phần 2</p></a>
+
+        <a class="epLink" ><button id="ButtonEp23" class="numEp" onclick="changeEpisodeNumber('23')">023</button><p>Sinh nhật cho Wakabayashi-san!</p></a>
+
+        <a class="epLink" ><button id="ButtonEp24" class="numEp" onclick="changeEpisodeNumber('24')">024</button><p>Chiến dịch cầu nguyện single 3! Phần 1</p></a>
+    
+        <a class="epLink" ><button id="ButtonEp25" class="numEp" onclick="changeEpisodeNumber('25')">025</button><p>Chiến dịch cầu nguyện single 3! Phần 2</p></a>
+        
+        <a class="epLink" ><button id="ButtonEp26" class="numEp" onclick="changeEpisodeNumber('26')">026</button><p>Giải vô địch Minami-chan! Phần 1</p></a>
+
+        <a class="epLink" ><button id="ButtonEp27" class="numEp" onclick="changeEpisodeNumber('27')">027</button><p>Giải vô địch Minami-chan! Phần 2</p></a>
 
 
     <!-- chưa làm :(
-        <a class="epLink" href="HinaAi28.html"><button class="numEp">028</button><p>Lớp học variety với Tanaka-sensei! Phần 2</p></a>
+        <a class="epLink" ><button id="ButtonEp28" class="numEp" onclick="changeEpisodeNumber('28')">028</button><p>Lớp học variety với Tanaka-sensei! Phần 2</p></a>
 
-        <a class="epLink" href="HinaAi29.html"><button class="numEp">029</button><p>Cái đó là nói quá rồi, lần 1!</p></a>
+        <a class="epLink" ><button id="ButtonEp29" class="numEp" onclick="changeEpisodeNumber('29')">029</button><p>Cái đó là nói quá rồi, lần 1!</p></a>
 
-        <a class="epLink" href="HinaAi30.html"><button class="numEp">030</button><p>Tìm kiếm nữ hoàng GanaOshi! Phần 1</p></a>
+        <a class="epLink" ><button id="ButtonEp30" class="numEp" onclick="changeEpisodeNumber('30')">030</button><p>Tìm kiếm nữ hoàng GanaOshi! Phần 1</p></a>
 
-        <a class="epLink" href="HinaAi31.html"><button class="numEp">031</button><p>Tìm kiếm nữ hoàng GanaOshi! Phần 3</p></a>
+        <a class="epLink" ><button id="ButtonEp31" class="numEp" onclick="changeEpisodeNumber('31')">031</button><p>Tìm kiếm nữ hoàng GanaOshi! Phần 3</p></a>
 
-        <a class="epLink" href="HinaAi32.html"><button class="numEp">032</button><p>Cuộc thi thuyết trình lần thứ 3! Phần 1</p></a>
+        <a class="epLink" ><button id="ButtonEp32" class="numEp" onclick="changeEpisodeNumber('32')">032</button><p>Cuộc thi thuyết trình lần thứ 3! Phần 1</p></a>
 
-        <a class="epLink" href="HinaAi33.html"><button class="numEp">033</button><p>Cuộc thi thuyết trình lần thứ 3! Phần 3</p></a>
+        <a class="epLink" ><button id="ButtonEp33" class="numEp" onclick="changeEpisodeNumber('33')">033</button><p>Cuộc thi thuyết trình lần thứ 3! Phần 3</p></a>
     -->
 
 
-        <a class="epLink" href="HinaAi34.html"><button class="numEp">034</button><p>Những cảnh bị cắt trong tập 33</p></a>
+        <a class="epLink" ><button id="ButtonEp34" class="numEp" onclick="changeEpisodeNumber('34')">034</button><p>Những cảnh bị cắt trong tập 33</p></a>
         
-        <a class="epLink" href="HinaAi35.html"><button class="numEp">035</button><p>Video thổ lộ của các thành viên! Phần 1</p></a>
+        <a class="epLink" ><button id="ButtonEp35" class="numEp" onclick="changeEpisodeNumber('35')">035</button><p>Video thổ lộ của các thành viên! Phần 1</p></a>
         
-        <a class="epLink" href="HinaAi36.html"><button class="numEp">036</button><p>Video thổ lộ của các thành viên! Phần 2</p></a>
+        <a class="epLink" ><button id="ButtonEp36" class="numEp" onclick="changeEpisodeNumber('36')">036</button><p>Video thổ lộ của các thành viên! Phần 2</p></a>
 
-        <a class="epLink" href="HinaAi37.html"><button class="numEp">037</button><p>Giải thưởng câu nói ấn tượng!</p></a>
+        <a class="epLink" ><button id="ButtonEp37" class="numEp" onclick="changeEpisodeNumber('37')">037</button><p>Giải thưởng câu nói ấn tượng!</p></a>
 
-        <a class="epLink" href="HinaAi38.html"><button class="numEp">038</button><p>Giấc mơ đầu năm! Phần 1</p></a>
+        <a class="epLink" ><button id="ButtonEp38" class="numEp" onclick="changeEpisodeNumber('38')">038</button><p>Giấc mơ đầu năm! Phần 1</p></a>
 
-        <a class="epLink" href="HinaAi39.html"><button class="numEp">039</button><p>Giấc mơ đầu năm! Phần 2!</p></a>
+        <a class="epLink" ><button id="ButtonEp39" class="numEp" onclick="changeEpisodeNumber('39')">039</button><p>Giấc mơ đầu năm! Phần 2!</p></a>
 
 
     <!--  chưa làm :(
-        <a class="epLink" href="HinaAi40.html"><button class="numEp">040</button><p>Tìm kiếm nữ hoàng GanaOshi! Phần 1</p></a>
+        <a class="epLink" ><button id="ButtonEp40" class="numEp" onclick="changeEpisodeNumber('40')">040</button><p>Tìm kiếm nữ hoàng GanaOshi! Phần 1</p></a>
 
-        <a class="epLink" href="HinaAi41.html"><button class="numEp">041</button><p>Tìm kiếm nữ hoàng GanaOshi! Phần 4</p></a>
+        <a class="epLink" ><button id="ButtonEp41" class="numEp" onclick="changeEpisodeNumber('41')">041</button><p>Tìm kiếm nữ hoàng GanaOshi! Phần 4</p></a>
 
-        <a class="epLink" href="HinaAi42.html"><button class="numEp">042</button><p>Cuộc thi thuyết trình lần thứ 3! Phần 1</p></a>
+        <a class="epLink" ><button id="ButtonEp42" class="numEp" onclick="changeEpisodeNumber('42')">042</button><p>Cuộc thi thuyết trình lần thứ 3! Phần 1</p></a>
 
-        <a class="epLink" href="HinaAi43.html"><button class="numEp">043</button><p>Cuộc thi thuyết trình lần thứ 3! Phần 4</p></a>
+        <a class="epLink" ><button id="ButtonEp43" class="numEp" onclick="changeEpisodeNumber('43')">043</button><p>Cuộc thi thuyết trình lần thứ 3! Phần 4</p></a>
     -->
 
 
-        <a class="epLink" href="HinaAi44.html"><button class="numEp">044</button><p>Chiến dịch quảng bá single 4!</p></a>
+        <a class="epLink" ><button id="ButtonEp44" class="numEp" onclick="changeEpisodeNumber('44')">044</button><p>Chiến dịch quảng bá single 4!</p></a>
         
-        <a class="epLink" href="HinaAi45.html"><button class="numEp">045</button><p>Giải thích ý nghĩa MV trong single 4!</p></a>
+        <a class="epLink" ><button id="ButtonEp45" class="numEp" onclick="changeEpisodeNumber('45')">045</button><p>Giải thích ý nghĩa MV trong single 4!</p></a>
         
-        <a class="epLink" href="HinaAi46.html"><button class="numEp">046</button><p>Điều khiến các thành viên hứng thú!</p></a>
+        <a class="epLink" ><button id="ButtonEp46" class="numEp" onclick="changeEpisodeNumber('46')">046</button><p>Điều khiến các thành viên hứng thú!</p></a>
 
-        <a class="epLink" href="HinaAi47.html"><button class="numEp">047</button><p>HinaAi vs HinaMashou, quyết định tên gọi tắt! Phần 1</p></a>
+        <a class="epLink" ><button id="ButtonEp47" class="numEp" onclick="changeEpisodeNumber('47')">047</button><p>HinaAi vs HinaMashou, quyết định tên gọi tắt! Phần 1</p></a>
 
-        <a class="epLink" href="HinaAi48.html"><button class="numEp">048</button><p>HinaAi vs HinaMashou, quyết định tên gọi tắt! Phần 2</p></a>
+        <a class="epLink" ><button id="ButtonEp48" class="numEp" onclick="changeEpisodeNumber('48')">048</button><p>HinaAi vs HinaMashou, quyết định tên gọi tắt! Phần 2</p></a>
 
-        <a class="epLink" href="HinaAi49.html"><button class="numEp">049</button><p>Kỉ niệm 1 năm của show, phần 1</p></a>
+        <a class="epLink" ><button id="ButtonEp49" class="numEp" onclick="changeEpisodeNumber('49')">049</button><p>Kỉ niệm 1 năm của show, phần 1</p></a>
 
-        <a class="epLink" href="HinaAi50.html"><button class="numEp">050</button><p>Kỉ niệm 1 năm của show, phần 2</p></a>
+        <a class="epLink" ><button id="ButtonEp50" class="numEp" onclick="changeEpisodeNumber('50')">050</button><p>Kỉ niệm 1 năm của show, phần 2</p></a>
 
-        <a class="epLink" href="HinaAi51.html"><button class="numEp">051</button><p>Chào mừng những thành viên còn lại của Gen 3!</p></a>
+    </div>        
 
-        <a class="epLink" href="HinaAi52.html"><button class="numEp">052</button><p>Cuộc thi thuyết trình lần thứ 2.5! Phần 1</p></a>
+    <div id="51-100" style="display: none; transition: all 0.3 ease;">
 
-        <a class="epLink" href="HinaAi53.html"><button class="numEp">053</button><p>Cuộc thi thuyết trình lần thứ 2.5! Phần 2</p></a>
+        <a class="epLink" ><button id="ButtonEp51" class="numEp" onclick="changeEpisodeNumber('51')">051</button><p>Chào mừng những thành viên còn lại của Gen 3!</p></a>
 
-        <a class="epLink" href="HinaAi54.html"><button class="numEp">054</button><p>Cuộc thi thuyết trình lần thứ 2.5! Phần 3</p></a>
+        <a class="epLink" ><button id="ButtonEp52" class="numEp" onclick="changeEpisodeNumber('52')">052</button><p>Cuộc thi thuyết trình lần thứ 2.5! Phần 1</p></a>
+
+        <a class="epLink" ><button id="ButtonEp53" class="numEp" onclick="changeEpisodeNumber('53')">053</button><p>Cuộc thi thuyết trình lần thứ 2.5! Phần 2</p></a>
+
+        <a class="epLink" ><button id="ButtonEp54" class="numEp" onclick="changeEpisodeNumber('54')">054</button><p>Cuộc thi thuyết trình lần thứ 2.5! Phần 3</p></a>
         
-        <a class="epLink" href="HinaAi55.html"><button class="numEp">055</button><p>Tìm kiếm nữ hoàng cảnh cắt! Phần 1</p></a>
+        <a class="epLink" ><button id="ButtonEp55" class="numEp" onclick="changeEpisodeNumber('55')">055</button><p>Tìm kiếm nữ hoàng cảnh cắt! Phần 1</p></a>
         
-        <a class="epLink" href="HinaAi56.html"><button class="numEp">056</button><p>Tìm kiếm nữ hoàng cảnh cắt! Phần 2</p></a>
+        <a class="epLink" ><button id="ButtonEp56" class="numEp" onclick="changeEpisodeNumber('56')">056</button><p>Tìm kiếm nữ hoàng cảnh cắt! Phần 2</p></a>
 
-        <a class="epLink" href="HinaAi57.html"><button class="numEp">057</button><p>Lấp đầy thời lượng bằng những cảnh nổi bật! Phần 1</p></a>
+        <a class="epLink" ><button id="ButtonEp57" class="numEp" onclick="changeEpisodeNumber('57')">057</button><p>Lấp đầy thời lượng bằng những cảnh nổi bật! Phần 1</p></a>
 
-        <a class="epLink" href="HinaAi58.html"><button class="numEp">058</button><p>Lấp đầy thời lượng bằng những cảnh nổi bật! Phần 2</p></a>
+        <a class="epLink" ><button id="ButtonEp58" class="numEp" onclick="changeEpisodeNumber('58')">058</button><p>Lấp đầy thời lượng bằng những cảnh nổi bật! Phần 2</p></a>
 
-        <a class="epLink" href="HinaAi59.html"><button class="numEp">059</button><p>Lấp đầy thời lượng bằng những cảnh nổi bật! Phần 3</p></a>
+        <a class="epLink" ><button id="ButtonEp59" class="numEp" onclick="changeEpisodeNumber('59')">059</button><p>Lấp đầy thời lượng bằng những cảnh nổi bật! Phần 3</p></a>
 
-        <a class="epLink" href="HinaAi60.html"><button class="numEp">060</button><p>Lấp đầy thời lượng bằng những cảnh nổi bật! Phần 4</p></a>
+        <a class="epLink" ><button id="ButtonEp60" class="numEp" onclick="changeEpisodeNumber('60')">060</button><p>Lấp đầy thời lượng bằng những cảnh nổi bật! Phần 4</p></a>
 
-        <a class="epLink" href="HinaAi61.html"><button class="numEp">061</button><p>Đi tìm Obaka Center đời thứ 2! Phần 1</p></a>
+        <a class="epLink" ><button id="ButtonEp61" class="numEp" onclick="changeEpisodeNumber('61')">061</button><p>Đi tìm Obaka Center đời thứ 2! Phần 1</p></a>
 
-        <a class="epLink" href="HinaAi62.html"><button class="numEp">062</button><p>Đi tìm Obaka Center đời thứ 2! Phần 2</p></a>
+        <a class="epLink" ><button id="ButtonEp62" class="numEp" onclick="changeEpisodeNumber('62')">062</button><p>Đi tìm Obaka Center đời thứ 2! Phần 2</p></a>
 
-        <a class="epLink" href="HinaAi63.html"><button class="numEp">063</button><p>Đi tìm Obaka Center đời thứ 2! Phần 3</p></a>
+        <a class="epLink" ><button id="ButtonEp63" class="numEp" onclick="changeEpisodeNumber('63')">063</button><p>Đi tìm Obaka Center đời thứ 2! Phần 3</p></a>
 
-        <a class="epLink" href="HinaAi64.html"><button class="numEp">064</button><p>Đi tìm Obaka Center đời thứ 2! Phần 4</p></a>
+        <a class="epLink" ><button id="ButtonEp64" class="numEp" onclick="changeEpisodeNumber('64')">064</button><p>Đi tìm Obaka Center đời thứ 2! Phần 4</p></a>
         
-        <a class="epLink" href="HinaAi65.html"><button class="numEp">065</button><p>Chào mừng Kage-san trở lại! Phần 1</p></a>
+        <a class="epLink" ><button id="ButtonEp65" class="numEp" onclick="changeEpisodeNumber('65')">065</button><p>Chào mừng Kage-san trở lại! Phần 1</p></a>
         
-        <a class="epLink" href="HinaAi66.html"><button class="numEp">066</button><p>Chào mừng Kage-san trở lại! Phần 2</p></a>
+        <a class="epLink" ><button id="ButtonEp66" class="numEp" onclick="changeEpisodeNumber('66')">066</button><p>Chào mừng Kage-san trở lại! Phần 2</p></a>
 
-        <a class="epLink" href="HinaAi67.html"><button class="numEp">067</button><p>Kasuga học hỏi kinh nghiệm làm phụ huynh! Phần 1</p></a>
+        <a class="epLink" ><button id="ButtonEp67" class="numEp" onclick="changeEpisodeNumber('67')">067</button><p>Kasuga học hỏi kinh nghiệm làm phụ huynh! Phần 1</p></a>
 
-        <a class="epLink" href="HinaAi68.html"><button class="numEp">068</button><p>Kasuga học hỏi kinh nghiệm làm phụ huynh! Phần 2</p></a>
+        <a class="epLink" ><button id="ButtonEp68" class="numEp" onclick="changeEpisodeNumber('68')">068</button><p>Kasuga học hỏi kinh nghiệm làm phụ huynh! Phần 2</p></a>
 
-        <a class="epLink" href="HinaAi69.html"><button class="numEp">069</button><p>Kasuga học hỏi kinh nghiệm làm phụ huynh! Phần 3!</p></a>
+        <a class="epLink" ><button id="ButtonEp69" class="numEp" onclick="changeEpisodeNumber('69')">069</button><p>Kasuga học hỏi kinh nghiệm làm phụ huynh! Phần 3!</p></a>
 
-        <a class="epLink" href="HinaAi70.html"><button class="numEp">070</button><p>Cuộc thi kể truyện ma!</p></a>
+        <a class="epLink" ><button id="ButtonEp70" class="numEp" onclick="changeEpisodeNumber('70')">070</button><p>Cuộc thi kể chuyện ma!</p></a>
 
-        <a class="epLink" href="HinaAi71.html"><button class="numEp">071</button><p>Trải nghiệm lần đầu của các thành viên!</p></a>
+        <a class="epLink" ><button id="ButtonEp71" class="numEp" onclick="changeEpisodeNumber('71')">071</button><p>Trải nghiệm lần đầu của các thành viên!</p></a>
 
-        <a class="epLink" href="HinaAi72.html"><button class="numEp">072</button><p>Đi tìm nữ hoàng burikko đời thứ 2! Phần 1</p></a>
+        <a class="epLink" ><button id="ButtonEp72" class="numEp" onclick="changeEpisodeNumber('72')">072</button><p>Đi tìm nữ hoàng burikko đời thứ 2! Phần 1</p></a>
 
-        <a class="epLink" href="HinaAi73.html"><button class="numEp">073</button><p>Đi tìm nữ hoàng burikko đời thứ 2! Phần 2</p></a>
+        <a class="epLink" ><button id="ButtonEp73" class="numEp" onclick="changeEpisodeNumber('73')">073</button><p>Đi tìm nữ hoàng burikko đời thứ 2! Phần 2</p></a>
 
-        <a class="epLink" href="HinaAi74.html"><button class="numEp">074</button><p>Chiến dịch cầu nguyện single đầu tiên! Phần 1</p></a>
+        <a class="epLink" ><button id="ButtonEp74" class="numEp" onclick="changeEpisodeNumber('74')">074</button><p>Chiến dịch cầu nguyện single đầu tiên! Phần 1</p></a>
         
-        <a class="epLink" href="HinaAi75.html"><button class="numEp">075</button><p>Chiến dịch cầu nguyện single đầu tiên! Phần 2</p></a>
+        <a class="epLink" ><button id="ButtonEp75" class="numEp" onclick="changeEpisodeNumber('75')">075</button><p>Chiến dịch cầu nguyện single đầu tiên! Phần 2</p></a>
         
-        <a class="epLink" href="HinaAi76.html"><button class="numEp">076</button><p>Thể hiện kĩ năng học được khi giãn cách! Phần 1</p></a>
+        <a class="epLink" ><button id="ButtonEp76" class="numEp" onclick="changeEpisodeNumber('76')">076</button><p>Thể hiện kĩ năng học được khi giãn cách! Phần 1</p></a>
 
-        <a class="epLink" href="HinaAi77.html"><button class="numEp">077</button><p>Thể hiện kĩ năng học được khi giãn cách! Phần 2</p></a>
+        <a class="epLink" ><button id="ButtonEp77" class="numEp" onclick="changeEpisodeNumber('77')">077</button><p>Thể hiện kĩ năng học được khi giãn cách! Phần 2</p></a>
 
-        <a class="epLink" href="HinaAi78.html"><button class="numEp">078</button><p>Thể hiện kĩ năng học được khi giãn cách! Phần 3</p></a>
+        <a class="epLink" ><button id="ButtonEp78" class="numEp" onclick="changeEpisodeNumber('78')">078</button><p>Thể hiện kĩ năng học được khi giãn cách! Phần 3</p></a>
 
-        <a class="epLink" href="HinaAi79.html"><button class="numEp">079</button><p>Công viên thân thiện Tokorozawa của Toshiaki Kasuga! Phần 1</p></a>
+        <a class="epLink" ><button id="ButtonEp79" class="numEp" onclick="changeEpisodeNumber('79')">079</button><p>Công viên thân thiện Tokorozawa của Toshiaki Kasuga! Phần 1</p></a>
 
-        <a class="epLink" href="HinaAi80.html"><button class="numEp">080</button><p>Công viên thân thiện Tokorozawa của Toshiaki Kasuga! Phần 2</p></a>
+        <a class="epLink" ><button id="ButtonEp80" class="numEp" onclick="changeEpisodeNumber('80')">080</button><p>Công viên thân thiện Tokorozawa của Toshiaki Kasuga! Phần 2</p></a>
 
-        <a class="epLink" href="HinaAi81.html"><button class="numEp">081</button><p>Gen 3 camera giấu kín! Phần 1</p></a>
+        <a class="epLink" ><button id="ButtonEp81" class="numEp" onclick="changeEpisodeNumber('81')">081</button><p>Gen 3 camera giấu kín! Phần 1</p></a>
 
-        <a class="epLink" href="HinaAi82.html"><button class="numEp">082</button><p>Gen 3 camera giấu kín! Phần 2</p></a>
+        <a class="epLink" ><button id="ButtonEp82" class="numEp" onclick="changeEpisodeNumber('82')">082</button><p>Gen 3 camera giấu kín! Phần 2</p></a>
 
-        <a class="epLink" href="HinaAi83.html"><button class="numEp">083</button><p>Cải thiện khả năng diễn xuất! Phần 1</p></a>
+        <a class="epLink" ><button id="ButtonEp83" class="numEp" onclick="changeEpisodeNumber('83')">083</button><p>Cải thiện khả năng diễn xuất! Phần 1</p></a>
 
-        <a class="epLink" href="HinaAi84.html"><button class="numEp">084</button><p>Cải thiện khả năng diễn xuất! Phần 2</p></a>
+        <a class="epLink" ><button id="ButtonEp84" class="numEp" onclick="changeEpisodeNumber('84')">084</button><p>Cải thiện khả năng diễn xuất! Phần 2</p></a>
 
-        <a class="epLink" href="HinaAi85.html"><button class="numEp">085</button><p>Cố gắng kiếm thêm những công việc bên ngoài! Phần 1</p></a>
+        <a class="epLink" ><button id="ButtonEp85" class="numEp" onclick="changeEpisodeNumber('85')">085</button><p>Cố gắng kiếm thêm những công việc bên ngoài! Phần 1</p></a>
 
-        <a class="epLink" href="HinaAi86.html"><button class="numEp">086</button><p>Cố gắng kiếm thêm những công việc bên ngoài! Phần 2</p></a>
+        <a class="epLink" ><button id="ButtonEp86" class="numEp" onclick="changeEpisodeNumber('86')">086</button><p>Cố gắng kiếm thêm những công việc bên ngoài! Phần 2</p></a>
         
-        <a class="epLink" href="HinaAi87.html"><button class="numEp">087</button><p>Đã tới lượt của tôi! Phần 1</p></a>
+        <a class="epLink" ><button id="ButtonEp87" class="numEp" onclick="changeEpisodeNumber('87')">087</button><p>Đã tới lượt của tôi! Phần 1</p></a>
 
-        <a class="epLink" href="HinaAi88.html"><button class="numEp">088</button><p>Đã tới lượt của tôi! Phần 2</p></a>
+        <a class="epLink" ><button id="ButtonEp88" class="numEp" onclick="changeEpisodeNumber('88')">088</button><p>Đã tới lượt của tôi! Phần 2</p></a>
 
-        <a class="epLink" href="HinaAi89.html"><button class="numEp">089</button><p>Đã tới lượt của tôi! Phần 3</p></a>
+        <a class="epLink" ><button id="ButtonEp89" class="numEp" onclick="changeEpisodeNumber('89')">089</button><p>Đã tới lượt của tôi! Phần 3</p></a>
 
-        <a class="epLink" href="HinaAi90.html"><button class="numEp">090</button><p>Trận chiến năm tuổi! Phần 1</p></a>
+        <a class="epLink" ><button id="ButtonEp90" class="numEp" onclick="changeEpisodeNumber('90')">090</button><p>Trận chiến năm tuổi! Phần 1</p></a>
 
-        <a class="epLink" href="HinaAi91.html"><button class="numEp">091</button><p>Trận chiến năm tuổi! Phần 2</p></a>
+        <a class="epLink" ><button id="ButtonEp91" class="numEp" onclick="changeEpisodeNumber('91')">091</button><p>Trận chiến năm tuổi! Phần 2</p></a>
 
-        <a class="epLink" href="HinaAi92.html"><button class="numEp">092</button><p>Niên biểu gen 3 mới!</p></a>
+        <a class="epLink" ><button id="ButtonEp92" class="numEp" onclick="changeEpisodeNumber('92')">092</button><p>Niên biểu gen 3 mới!</p></a>
 
-        <a class="epLink" href="HinaAi93.html"><button class="numEp">093</button><p>Những quy tắc hàng ngày! Phần 1</p></a>
+        <a class="epLink" ><button id="ButtonEp93" class="numEp" onclick="changeEpisodeNumber('93')">093</button><p>Những quy tắc hàng ngày! Phần 1</p></a>
 
-        <a class="epLink" href="HinaAi94.html"><button class="numEp">094</button><p>Những quy tắc hàng ngày! Phần 2</p></a>
+        <a class="epLink" ><button id="ButtonEp94" class="numEp" onclick="changeEpisodeNumber('94')">094</button><p>Những quy tắc hàng ngày! Phần 2</p></a>
 
-        <a class="epLink" href="HinaAi95.html"><button class="numEp">095</button><p>Valentine huyễn tưởng! Phần 1</p></a>
+        <a class="epLink" ><button id="ButtonEp95" class="numEp" onclick="changeEpisodeNumber('95')">095</button><p>Valentine huyễn tưởng! Phần 1</p></a>
         
-        <a class="epLink" href="HinaAi96.html"><button class="numEp">096</button><p>Valentine huyễn tưởng! Phần 2</p></a>
+        <a class="epLink" ><button id="ButtonEp96" class="numEp" onclick="changeEpisodeNumber('96')">096</button><p>Valentine huyễn tưởng! Phần 2</p></a>
 
-        <a class="epLink" href="HinaAi97.html"><button class="numEp">097</button><p>Lớp học variety với Tanaka-sensei! Phần 1</p></a>
+        <a class="epLink" ><button id="ButtonEp97" class="numEp" onclick="changeEpisodeNumber('97')">097</button><p>Lớp học variety với Tanaka-sensei! Phần 1</p></a>
 
-        <a class="epLink" href="HinaAi98.html"><button class="numEp">098</button><p>Lớp học variety với Tanaka-sensei! Phần 2</p></a>
+        <a class="epLink" ><button id="ButtonEp98" class="numEp" onclick="changeEpisodeNumber('98')">098</button><p>Lớp học variety với Tanaka-sensei! Phần 2</p></a>
 
-        <a class="epLink" href="HinaAi99.html"><button class="numEp">099</button><p>Cái đó là nói quá rồi, lần 1!</p></a>
+        <a class="epLink" ><button id="ButtonEp99" class="numEp" onclick="changeEpisodeNumber('99')">099</button><p>Cái đó là nói quá rồi, lần 1!</p></a>
 
-        <a class="epLink" href="HinaAi100.html"><button class="numEp">100</button><p>Tìm kiếm nữ hoàng GanaOshi! Phần 1</p></a>
+        <a class="epLink" ><button id="ButtonEp100" class="numEp" onclick="changeEpisodeNumber('100')">100</button><p>Tìm kiếm nữ hoàng GanaOshi! Phần 1</p></a>
     </div>
 
-    <div id="101-200" style="display: none;  transition: all 0.3 ease;">
+    <div id="101-150" style="display: none;  transition: all 0.3 ease;">
 
-        <a class="epLink" href="HinaAi101.html"><button class="numEp">101</button><p>Tìm kiếm nữ hoàng GanaOshi! Phần 2</p></a>
+        <a class="epLink" ><button id="ButtonEp101" class="numEp" onclick="changeEpisodeNumber('101')">101</button><p>Tìm kiếm nữ hoàng GanaOshi! Phần 2</p></a>
 
-        <a class="epLink" href="HinaAi102.html"><button class="numEp">102</button><p>Cuộc thi thuyết trình lần thứ 3! Phần 1</p></a>
+        <a class="epLink" ><button id="ButtonEp102" class="numEp" onclick="changeEpisodeNumber('102')">102</button><p>Cuộc thi thuyết trình lần thứ 3! Phần 1</p></a>
 
-        <a class="epLink" href="HinaAi103.html"><button class="numEp">103</button><p>Cuộc thi thuyết trình lần thứ 3! Phần 2</p></a>
+        <a class="epLink" ><button id="ButtonEp103" class="numEp" onclick="changeEpisodeNumber('103')">103</button><p>Cuộc thi thuyết trình lần thứ 3! Phần 2</p></a>
 
-        <a class="epLink" href="HinaAi104.html"><button class="numEp">104</button><p>Cái đó là nói quá rồi, lần 2!</p></a>
+        <a class="epLink" ><button id="ButtonEp104" class="numEp" onclick="changeEpisodeNumber('104')">104</button><p>Cái đó là nói quá rồi, lần 2!</p></a>
 
 
         <!-- chưa làm :(
 
-        <a class="epLink" href="HinaAi105.html"><button class="numEp">105</button><p>Cuộc thi đánh bại paisen! Phần 1</p></a>
+        <a class="epLink" ><button id="ButtonEp105" class="numEp" onclick="changeEpisodeNumber('105')">105</button><p>Cuộc thi đánh bại paisen! Phần 1</p></a>
 
-        <a class="epLink" href="HinaAi106.html"><button class="numEp">106</button><p>Cái đó là nói quá rồi, lần một!</p></a>
+        <a class="epLink" ><button id="ButtonEp106" class="numEp" onclick="changeEpisodeNumber('106')">106</button><p>Cái đó là nói quá rồi, lần một!</p></a>
 
-        <a class="epLink" href="HinaAi107.html"><button class="numEp">107</button><p>Cái đó là nói quá rồi, lần một!</p></a>
+        <a class="epLink" ><button id="ButtonEp107" class="numEp" onclick="changeEpisodeNumber('107')">107</button><p>Cái đó là nói quá rồi, lần một!</p></a>
 
-        <a class="epLink" href="HinaAi108.html"><button class="numEp">108</button><p>Cái đó là nói quá rồi, lần một!</p></a>
+        <a class="epLink" ><button id="ButtonEp108" class="numEp" onclick="changeEpisodeNumber('108')">108</button><p>Cái đó là nói quá rồi, lần một!</p></a>
 
-        <a class="epLink" href="HinaAi109.html"><button class="numEp">109</button><p>Cái đó là nói quá rồi, lần một!</p></a>
+        <a class="epLink" ><button id="ButtonEp109" class="numEp" onclick="changeEpisodeNumber('109')">109</button><p>Cái đó là nói quá rồi, lần một!</p></a>
 
-        <a class="epLink" href="HinaAi110.html"><button class="numEp">110</button><p>Cái đó là nói quá rồi, lần một!</p></a>
+        <a class="epLink" ><button id="ButtonEp110" class="numEp" onclick="changeEpisodeNumber('110')">110</button><p>Cái đó là nói quá rồi, lần một!</p></a>
 
-        <a class="epLink" href="HinaAi111.html"><button class="numEp">111</button><p>Cái đó là nói quá rồi, lần một!</p></a>
+        <a class="epLink" ><button id="ButtonEp111" class="numEp" onclick="changeEpisodeNumber('111')">111</button><p>Cái đó là nói quá rồi, lần một!</p></a>
 
-        <a class="epLink" href="HinaAi112.html"><button class="numEp">112</button><p>Cái đó là nói quá rồi, lần một!</p></a>
+        <a class="epLink" ><button id="ButtonEp112" class="numEp" onclick="changeEpisodeNumber('112')">112</button><p>Cái đó là nói quá rồi, lần một!</p></a>
 
         -->
 
 
-        <a class="epLink" href="HinaAi113.html"><button class="numEp">113</button><p>The Đối Đầu! Phần 1</p></a>
+        <a class="epLink" ><button id="ButtonEp113" class="numEp" onclick="changeEpisodeNumber('113')">113</button><p>The Đối Đầu! Phần 1</p></a>
 
-        <a class="epLink" href="HinaAi114.html"><button class="numEp">114</button><p>The Đối Đầu! Phần 2</p></a>
+        <a class="epLink" ><button id="ButtonEp114" class="numEp" onclick="changeEpisodeNumber('114')">114</button><p>The Đối Đầu! Phần 2</p></a>
 
-        <a class="epLink" href="HinaAi115.html"><button class="numEp">115</button><p>The Đối Đầu! Phần 3</p></a>
+        <a class="epLink" ><button id="ButtonEp115" class="numEp" onclick="changeEpisodeNumber('115')">115</button><p>The Đối Đầu! Phần 3</p></a>
 
-        <a class="epLink" href="HinaAi116.html"><button class="numEp">116</button><p>Bảng xếp hạng mọi thứ về Saito Kyoko!</p></a>
+        <a class="epLink" ><button id="ButtonEp116" class="numEp" onclick="changeEpisodeNumber('116')">116</button><p>Bảng xếp hạng mọi thứ về Saito Kyoko!</p></a>
         
-        <a class="epLink" href="HinaAi117.html"><button class="numEp">117</button><p>Bức thư gửi tôi năm đó, lần 2!</p></a>
+        <a class="epLink" ><button id="ButtonEp117" class="numEp" onclick="changeEpisodeNumber('117')">117</button><p>Bức thư gửi tôi năm đó, lần 2!</p></a>
 
-        <a class="epLink" href="HinaAi118.html"><button class="numEp">118</button><p>Kế hoạch thành nhân cho Tomita và Nibu!</p></a>
+        <a class="epLink" ><button id="ButtonEp118" class="numEp" onclick="changeEpisodeNumber('118')">118</button><p>Kế hoạch thành nhân cho Tomita và Nibu!</p></a>
 
-        <a class="epLink" href="HinaAi119.html"><button class="numEp">119</button><p>Tin tức cá nhân nửa đầu 2021! Phần 1</p></a>
+        <a class="epLink" ><button id="ButtonEp119" class="numEp" onclick="changeEpisodeNumber('119')">119</button><p>Tin tức cá nhân nửa đầu 2021! Phần 1</p></a>
 
-        <a class="epLink" href="HinaAi120.html"><button class="numEp">120</button><p>Tin tức cá nhân nửa đầu 2021! Phần 2</p></a>
+        <a class="epLink" ><button id="ButtonEp120" class="numEp" onclick="changeEpisodeNumber('120')">120</button><p>Tin tức cá nhân nửa đầu 2021! Phần 2</p></a>
 
-        <a class="epLink" href="HinaAi121.html"><button class="numEp">121</button><p>Cái đó là nói quá rồi, lần 4!</p></a>
+        <a class="epLink" ><button id="ButtonEp121" class="numEp" onclick="changeEpisodeNumber('121')">121</button><p>Cái đó là nói quá rồi, lần 4!</p></a>
         
-        <a class="epLink" href="HinaAi122.html"><button class="numEp">122</button><p>Trận chiến biệt danh! Phần 1</p></a>
+        <a class="epLink" ><button id="ButtonEp122" class="numEp" onclick="changeEpisodeNumber('122')">122</button><p>Trận chiến biệt danh! Phần 1</p></a>
 
-        <a class="epLink" href="HinaAi123.html"><button class="numEp">123</button><p>Trận chiến biệt danh! Phần 2</p></a>
+        <a class="epLink" ><button id="ButtonEp123" class="numEp" onclick="changeEpisodeNumber('123')">123</button><p>Trận chiến biệt danh! Phần 2</p></a>
 
-        <a class="epLink" href="HinaAi124.html"><button class="numEp">124</button><p>Trận chiến biệt danh! Phần 3</p></a>
+        <a class="epLink" ><button id="ButtonEp124" class="numEp" onclick="changeEpisodeNumber('124')">124</button><p>Trận chiến biệt danh! Phần 3</p></a>
 
-        <a class="epLink" href="HinaAi125.html"><button class="numEp">125</button><p>Bảo Tàng Nghệ Thuật Mùa Thu! Phần 1</p></a>
+        <a class="epLink" ><button id="ButtonEp125" class="numEp" onclick="changeEpisodeNumber('125')">125</button><p>Bảo Tàng Nghệ Thuật Mùa Thu! Phần 1</p></a>
 
-        <a class="epLink" href="HinaAi126.html"><button class="numEp">126</button><p>Bảo Tàng Nghệ Thuật Mùa Thu! Phần 2</p></a>
+        <a class="epLink" ><button id="ButtonEp126" class="numEp" onclick="changeEpisodeNumber('126')">126</button><p>Bảo Tàng Nghệ Thuật Mùa Thu! Phần 2</p></a>
 
-        <a class="epLink" href="HinaAi127.html"><button class="numEp">127</button><p>Đi tìm Nữ Hoàng Không Thể Giải Đố!</p></a>
+        <a class="epLink" ><button id="ButtonEp127" class="numEp" onclick="changeEpisodeNumber('127')">127</button><p>Đi tìm Nữ Hoàng Không Thể Giải Đố!</p></a>
 
-        <a class="epLink" href="HinaAi128.html"><button class="numEp">128</button><p>Đua Ngựa Hinatazaka! Phần 1</p></a>
+        <a class="epLink" ><button id="ButtonEp128" class="numEp" onclick="changeEpisodeNumber('128')">128</button><p>Đua Ngựa Hinatazaka! Phần 1</p></a>
 
-        <a class="epLink" href="HinaAi129.html"><button class="numEp">129</button><p>Đua Ngựa Hinatazaka! Phần 2</p></a>
+        <a class="epLink" ><button id="ButtonEp129" class="numEp" onclick="changeEpisodeNumber('129')">129</button><p>Đua Ngựa Hinatazaka! Phần 2</p></a>
 
-        <a class="epLink" href="HinaAi130.html"><button class="numEp">130</button><p>Tìm hiểu về center mới Osushi!</p></a>
+        <a class="epLink" ><button id="ButtonEp130" class="numEp" onclick="changeEpisodeNumber('130')">130</button><p>Tìm hiểu về center mới Osushi!</p></a>
 
-        <a class="epLink" href="HinaAi131.html"><button class="numEp">131</button><p>Chiến dịch quảng bá cho single thứ 6!</p></a>
+        <a class="epLink" ><button id="ButtonEp131" class="numEp" onclick="changeEpisodeNumber('131')">131</button><p>Chiến dịch quảng bá cho single thứ 6!</p></a>
 
-        <a class="epLink" href="HinaAi132.html"><button class="numEp">132</button><p>Bình luận về MV của single 6!</p></a>
+        <a class="epLink" ><button id="ButtonEp132" class="numEp" onclick="changeEpisodeNumber('132')">132</button><p>Bình luận về MV của single 6!</p></a>
 
-        <a class="epLink" href="HinaAi133.html"><button class="numEp">133</button><p>CLB bóng chày Hinatazaka trở lại! Phần 1</p></a>
+        <a class="epLink" ><button id="ButtonEp133" class="numEp" onclick="changeEpisodeNumber('133')">133</button><p>CLB bóng chày Hinatazaka trở lại! Phần 1</p></a>
 
-        <a class="epLink" href="HinaAi134.html"><button class="numEp">134</button><p>CLB bóng chày Hinatazaka trở lại! Phần 2</p></a>
+        <a class="epLink" ><button id="ButtonEp134" class="numEp" onclick="changeEpisodeNumber('134')">134</button><p>CLB bóng chày Hinatazaka trở lại! Phần 2</p></a>
 
-        <a class="epLink" href="HinaAi135.html"><button class="numEp">135</button><p>Gen 3 nấu ăn thể hiện sự biết ơn với paisen!</p></a>
+        <a class="epLink" ><button id="ButtonEp135" class="numEp" onclick="changeEpisodeNumber('135')">135</button><p>Gen 3 nấu ăn thể hiện sự biết ơn với paisen!</p></a>
         
-        <a class="epLink" href="HinaAi136.html"><button class="numEp">136</button><p>Giải quyết những điều còn băn khoăn! Phần 1</p></a>
+        <a class="epLink" ><button id="ButtonEp136" class="numEp" onclick="changeEpisodeNumber('136')">136</button><p>Giải quyết những điều còn băn khoăn! Phần 1</p></a>
         
-        <a class="epLink" href="HinaAi137.html"><button class="numEp">137</button><p>Giải quyết những điều còn băn khoăn! Phần 2</p></a>
+        <a class="epLink" ><button id="ButtonEp137" class="numEp" onclick="changeEpisodeNumber('137')">137</button><p>Giải quyết những điều còn băn khoăn! Phần 2</p></a>
 
-        <a class="epLink" href="HinaAi138.html"><button class="numEp">138</button><p>Bữa tiệc Giáng Sinh sớm!</p></a>
+        <a class="epLink" ><button id="ButtonEp138" class="numEp" onclick="changeEpisodeNumber('138')">138</button><p>Bữa tiệc Giáng Sinh sớm!</p></a>
 
-        <a class="epLink" href="HinaAi139.html"><button class="numEp">139</button><p>Giải thưởng Câu Nói Ấn Tượng Hinatazaka lần thứ 2! Phần 1</p></a>
+        <a class="epLink" ><button id="ButtonEp139" class="numEp" onclick="changeEpisodeNumber('139')">139</button><p>Giải thưởng Câu Nói Ấn Tượng Hinatazaka lần thứ 2! Phần 1</p></a>
 
-        <a class="epLink" href="HinaAi140.html"><button class="numEp">140</button><p>Giải thưởng Câu Nói Ấn Tượng Hinatazaka lần thứ 2! Phần 2</p></a>
+        <a class="epLink" ><button id="ButtonEp140" class="numEp" onclick="changeEpisodeNumber('140')">140</button><p>Giải thưởng Câu Nói Ấn Tượng Hinatazaka lần thứ 2! Phần 2</p></a>
         
-        <a class="epLink" href="HinaAi141.html"><button class="numEp">141</button><p>Đi Tìm Phúc Nữ 2022! Phần 1</p></a>
+        <a class="epLink" ><button id="ButtonEp141" class="numEp" onclick="changeEpisodeNumber('141')">141</button><p>Đi Tìm Phúc Nữ 2022! Phần 1</p></a>
 
-        <a class="epLink" href="HinaAi142.html"><button class="numEp">142</button><p>Đi Tìm Phúc Nữ 2022! Phần 2</p></a>
+        <a class="epLink" ><button id="ButtonEp142" class="numEp" onclick="changeEpisodeNumber('142')">142</button><p>Đi Tìm Phúc Nữ 2022! Phần 2</p></a>
 
-        <a class="epLink" href="HinaAi143.html"><button class="numEp">143</button><p>Thực Hiện Giấc Mơ Của Capudding SP!</p></a>
+        <a class="epLink" ><button id="ButtonEp143" class="numEp" onclick="changeEpisodeNumber('143')">143</button><p>Thực Hiện Giấc Mơ Của Capudding SP!</p></a>
 
-        <a class="epLink" href="HinaAi144.html"><button class="numEp">144</button><p>KASUKE, Đi Tìm Vận Động Viên Số 1 Của Hinatazaka! Phần 1</p></a>
+        <a class="epLink" ><button id="ButtonEp144" class="numEp" onclick="changeEpisodeNumber('144')">144</button><p>KASUKE, Đi Tìm Vận Động Viên Số 1 Của Hinatazaka! Phần 1</p></a>
 
-        <a class="epLink" href="HinaAi145.html"><button class="numEp">145</button><p>KASUKE, Đi Tìm Vận Động Viên Số 1 Của Hinatazaka! Phần 2</p></a>
+        <a class="epLink" ><button id="ButtonEp145" class="numEp" onclick="changeEpisodeNumber('145')">145</button><p>KASUKE, Đi Tìm Vận Động Viên Số 1 Của Hinatazaka! Phần 2</p></a>
 
-        <a class="epLink" href="HinaAi146.html"><button class="numEp">146</button><p>KASUKE, Đi Tìm Vận Động Viên Số 1 Của Hinatazaka! Phần 3</p></a>
+        <a class="epLink" ><button id="ButtonEp146" class="numEp" onclick="changeEpisodeNumber('146')">146</button><p>KASUKE, Đi Tìm Vận Động Viên Số 1 Của Hinatazaka! Phần 3</p></a>
 
-        <a class="epLink" href="HinaAi147.html"><button class="numEp">147</button><p>Cuộc Chiến Lên Sóng! Phần 1</p></a>
+        <a class="epLink" ><button id="ButtonEp147" class="numEp" onclick="changeEpisodeNumber('147')">147</button><p>Cuộc Chiến Lên Sóng! Phần 1</p></a>
 
-        <a class="epLink" href="HinaAi148.html"><button class="numEp">148</button><p>Cuộc Chiến Lên Sóng! Phần 2</p></a>
+        <a class="epLink" ><button id="ButtonEp148" class="numEp" onclick="changeEpisodeNumber('148')">148</button><p>Cuộc Chiến Lên Sóng! Phần 2</p></a>
 
-        <a class="epLink" href="HinaAi149.html"><button class="numEp">149</button><p>Cuộc Chiến Lên Sóng! Phần 3</p></a>
+        <a class="epLink" ><button id="ButtonEp149" class="numEp" onclick="changeEpisodeNumber('149')">149</button><p>Cuộc Chiến Lên Sóng! Phần 3</p></a>
 
-        <a class="epLink" href="HinaAi150.html"><button class="numEp">150</button><p>Kịch Bản Rung Động Giả Tưởng! Phần 1</p></a>
+        <a class="epLink" ><button id="ButtonEp150" class="numEp" onclick="changeEpisodeNumber('150')">150</button><p>Kịch Bản Rung Động Giả Tưởng! Phần 1</p></a>
+    </div>        
 
-        <a class="epLink" href="HinaAi151.html"><button class="numEp">151</button><p>Kịch Bản Rung Động Giả Tưởng! Phần 2</p></a>
+    <div id="151-200" style="display: none; transition: all 0.3 ease;">
+        <a class="epLink" ><button id="ButtonEp151" class="numEp" onclick="changeEpisodeNumber('151')">151</button><p>Kịch Bản Rung Động Giả Tưởng! Phần 2</p></a>
         
-        <a class="epLink" href="HinaAi152.html"><button class="numEp">152</button><p>Học tập và dự đoán về những việc xảy ra tại Tokyo Dome!</p></a>
+        <a class="epLink" ><button id="ButtonEp152" class="numEp" onclick="changeEpisodeNumber('152')">152</button><p>Học tập và dự đoán về những việc xảy ra tại Tokyo Dome!</p></a>
 
-        <a class="epLink" href="HinaAi153.html"><button class="numEp">153</button><p>Kỷ niệm đứa con đầu tiên của Wakabayashi!</p></a>
+        <a class="epLink" ><button id="ButtonEp153" class="numEp" onclick="changeEpisodeNumber('153')">153</button><p>Kỷ niệm đứa con đầu tiên của Wakabayashi!</p></a>
         
-        <a class="epLink" href="HinaAi154.html"><button class="numEp">154</button><p>G1 mùa Xuân, Đua Ngựa Hinatazaka! Phần 1</p></a>
+        <a class="epLink" ><button id="ButtonEp154" class="numEp" onclick="changeEpisodeNumber('154')">154</button><p>G1 mùa Xuân, Đua Ngựa Hinatazaka! Phần 1</p></a>
         
-        <a class="epLink" href="HinaAi155.html"><button class="numEp">155</button><p>G1 mùa Xuân, Đua Ngựa Hinatazaka! Phần 2</p></a>
+        <a class="epLink" ><button id="ButtonEp155" class="numEp" onclick="changeEpisodeNumber('155')">155</button><p>G1 mùa Xuân, Đua Ngựa Hinatazaka! Phần 2</p></a>
 
-        <a class="epLink" href="HinaAi156.html"><button class="numEp">156</button><p>Tìm kiếm nữ hoàng cảnh cắt đời thứ 2! Phần 1</p></a>
+        <a class="epLink" ><button id="ButtonEp156" class="numEp" onclick="changeEpisodeNumber('156')">156</button><p>Tìm kiếm nữ hoàng cảnh cắt đời thứ 2! Phần 1</p></a>
         
-        <a class="epLink" href="HinaAi157.html"><button class="numEp">157</button><p>Tìm kiếm nữ hoàng cảnh cắt đời thứ 2! Phần 2</p></a>
+        <a class="epLink" ><button id="ButtonEp157" class="numEp" onclick="changeEpisodeNumber('157')">157</button><p>Tìm kiếm nữ hoàng cảnh cắt đời thứ 2! Phần 2</p></a>
+
+        <a class="epLink" ><button id="ButtonEp158" class="numEp" onclick="changeEpisodeNumber('158')">158</button><p>Những cảnh ấn tượng do Audrey và SatoMitsu chọn lựa! Phần 1</p></a>
+
+        <a class="epLink" ><button id="ButtonEp159" class="numEp" onclick="changeEpisodeNumber('159')">159</button><p>Những cảnh ấn tượng do Audrey và SatoMitsu chọn lựa! Phần 2</p></a>
     
     </div>
 
