@@ -9,6 +9,9 @@ package.json
 .firebaserc
 firebase-debug.log
 
+# NodeJS folder
+node_module
+
 #Folder
 Rubbish
 .debris
