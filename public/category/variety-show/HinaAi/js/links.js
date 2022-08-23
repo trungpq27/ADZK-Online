@@ -1142,3 +1142,17 @@ const DL161 = "https://www.dailymotion.com/video/kFv7KsRfdlm3GBycJH5";
 const GD161 = "https://drive.google.com/file/d/1RXImrzixpU_6g11NMGB9b_WbS891yh2J/view?usp=sharing";
 const OK161 = "https://ok.ru/video/3990864988694";
 const TB161 = "https://terabox.com/s/19cpnVA3KJfihYDsSIczZ2A";
+
+//link ep162
+const TI162 = '220529 Hinatazaka de Aimashou ep162';
+const DL162 = "https://www.dailymotion.com/video/k7HU8CTzeI84S3yeFru";
+const GD162 = "https://drive.google.com/file/d/1eA7LeD5KPaCBb38OKhTaO2E5hKLH2hys/view?usp=sharing";
+const OK162 = "https://ok.ru/video/4033089440278";
+const TB162 = "https://terabox.com/s/12IwV4ZZrxEDVhNVEIq9uAA";
+
+//link ep163
+const TI163 = '220529 Hinatazaka de Aimashou ep163';
+const DL163 = "null";
+const GD163 = "https://drive.google.com/file/d/1waUJVcH9pl6QWTIRJnyVwsHkJaoh-GvL/view?usp=sharing";
+const OK163 = "https://ok.ru/video/4034956626454";
+const TB163 = "https://terabox.com/s/1gGbs7JydNcX3FjODB2F9Tw";

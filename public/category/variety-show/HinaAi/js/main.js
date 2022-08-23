@@ -58,7 +58,18 @@ let LinkOK = "//ok.ru/videoembed/" + LinkOK_raw[4];
 let DownGD = "https://drive.google.com/uc?export=download&id=" + LinkGD_raw[5];
 let DownTB = eval('TB' + episodeNumber);
 
-document.getElementById('HinaAiFrame').src = LinkDL; 
+if (eval('OK' + episodeNumber) != "null"){
+    document.getElementById('LinkOKButton').style.display = "inline-block"; 
+    document.getElementById('HinaAiFrame').src = LinkOK; 
+}
+if (eval('GD' + episodeNumber) != "null"){
+    document.getElementById('LinkGDButton').style.display = "inline-block"; 
+    document.getElementById('HinaAiFrame').src = LinkGD; 
+}
+if (eval('DL' + episodeNumber) != "null"){
+    document.getElementById('LinkDLButton').style.display = "inline-block"; 
+    document.getElementById('HinaAiFrame').src = LinkDL; 
+}
 
 
 
