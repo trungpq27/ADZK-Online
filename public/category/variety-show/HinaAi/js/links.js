@@ -1144,15 +1144,43 @@ const OK161 = "https://ok.ru/video/3990864988694";
 const TB161 = "https://terabox.com/s/19cpnVA3KJfihYDsSIczZ2A";
 
 //link ep162
-const TI162 = '220529 Hinatazaka de Aimashou ep162';
+const TI162 = '220605 Hinatazaka de Aimashou ep162';
 const DL162 = "https://www.dailymotion.com/video/k7HU8CTzeI84S3yeFru";
 const GD162 = "https://drive.google.com/file/d/1eA7LeD5KPaCBb38OKhTaO2E5hKLH2hys/view?usp=sharing";
 const OK162 = "https://ok.ru/video/4033089440278";
 const TB162 = "https://terabox.com/s/12IwV4ZZrxEDVhNVEIq9uAA";
 
 //link ep163
-const TI163 = '220529 Hinatazaka de Aimashou ep163';
+const TI163 = '220612 Hinatazaka de Aimashou ep163';
 const DL163 = "null";
 const GD163 = "https://drive.google.com/file/d/1waUJVcH9pl6QWTIRJnyVwsHkJaoh-GvL/view?usp=sharing";
 const OK163 = "https://ok.ru/video/4034956626454";
 const TB163 = "https://terabox.com/s/1gGbs7JydNcX3FjODB2F9Tw";
+
+//link ep164
+const TI164 = '220619 Hinatazaka de Aimashou ep164';
+const DL164 = "https://www.dailymotion.com/video/k1Nyc7ZDWqvrm1yf0EV";
+const GD164 = "https://drive.google.com/file/d/1dyiPVcl44YaNv_xruaTZ0ZNM_iWFDax7/view?usp=sharing";
+const OK164 = "https://ok.ru/video/4038461295126";
+const TB164 = "https://terabox.com/s/1Uz9uIX-wcIleeABeylhWwA";
+
+//link ep165
+const TI165 = '220626 Hinatazaka de Aimashou ep165';
+const DL165 = "https://www.dailymotion.com/video/kYaK3KQhp8xd87yfm78";
+const GD165 = "https://drive.google.com/file/d/1UmJ8DZzFAhiKLv-33g9MsHS-k9UdGAtS/view?usp=sharing";
+const OK165 = "https://ok.ru/video/4044177148438";
+const TB165 = "https://terabox.com/s/1DGONo1wLgXy1DE-ya6-D6A";
+
+//link ep166
+const TI166 = '220626 Hinatazaka de Aimashou ep166';
+const DL166 = "null";
+const GD166 = "https://drive.google.com/file/d/1kOBfUeytF8Hgxmopwa0kjSiKrmpxNZfH/view?usp=sharing";
+const OK166 = "https://ok.ru/video/4052066109974";
+const TB166 = "https://terabox.com/s/1Z7cHzd6U-PEKKFOPhXNy4w";
+
+//link ep167
+const TI167 = '220710 Hinatazaka de Aimashou ep167';
+const DL167 = "https://www.dailymotion.com/video/k381MTPWy481pmypHsS";
+const GD167 = "https://drive.google.com/file/d/12mcpqL1DP2ITxZ3akLfKAnG_mm6QKkrN/view?usp=sharing";
+const OK167 = "https://ok.ru/video/4233535228438";
+const TB167 = "https://terabox.com/s/1dMTqHYPIC7eAfSGnAPArjw";
